@@ -1,0 +1,51 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+/*# sourceMappingURL=style.css.map */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+html,body{
+  background: #F1E8E6;
+  font-family: 'Mulish', sans-serif;
+}
+
+.component-slider{
+  max-width: 990px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 25px;
+  background: white;
+  box-shadow: 0px 20px 60px -45px #F55951;
+  .slider{
+    &__item{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 157px;
+      height: 204px;
+      padding: 10px;
+      border-radius: 15px;
+
+      img{
+        object-fit: cover;
+        border-radius: 100%;
+      }
+
+      .title{
+        font-size: 14px;
+        color: #111127;
+        margin-top: 17px;
+      }
+    }
+    &__arrow{
+      width: 44px;
+      height: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 99px;
+      background: #F2DBD55A;
+    }
+  }
+}
