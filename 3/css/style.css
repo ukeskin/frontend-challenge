@@ -1,0 +1,146 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
+html,
+body {
+  background: linear-gradient(299.1deg, #b29b93 0.74%, #dacdc9 99.34%);
+  font-family: Mulish, sans-serif;
+  padding: 10px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.communityCard {
+  max-width: 545px;
+  padding: 70px;
+  background: #ede9e2;
+  border-radius: 41px;
+  color: #1e1411;
+}
+
+.communityCard__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.communityCard__header .title {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.communityCard__header .button {
+  cursor: pointer;
+}
+
+.communityCard__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.communityCard__body .title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.communityCard__body .paragraph {
+  padding-right: 30px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.communityCard__body .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  gap: 5rem;
+}
+
+.communityCard__body .stats .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.communityCard__body .stats .item span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.communityCard__body .stats .item p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.communityCard__body .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  gap: 24px;
+}
+
+.communityCard__body .actions .button {
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700px;
+  cursor: pointer;
+  padding: 24px 0px;
+}
+
+.communityCard__body .actions .button--outline {
+  background: transparent;
+}
+
+.communityCard__body .actions .button--primary {
+  background: #000;
+  color: #fff;
+}
+
+.communityCard__body .footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.communityCard__body .footer span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #433e3c;
+}
+/*# sourceMappingURL=style.css.map */
