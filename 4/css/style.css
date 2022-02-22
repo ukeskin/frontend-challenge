@@ -1,0 +1,110 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+html,
+body {
+  font-family: sans-serif;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #2c2c2c;
+}
+
+footer .bottomMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .bottomMenu .seperator {
+  width: 1px;
+  height: 24px;
+  background: #2c2c2c;
+  margin: 0px -4px;
+}
+
+footer .bottomMenu__item {
+  position: relative;
+  height: 48px;
+  width: 48px;
+  border: none;
+  background: #212121;
+  border-radius: 12px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+footer .bottomMenu__item--active:after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: #cacaca;
+  border-radius: 16px;
+}
+
+footer .bottomMenu__item .title {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 0.5rem;
+  color: rgba(255, 255, 255, 0.714);
+  background: #f2f2f26a;
+}
+
+footer .bottomMenu__item svg {
+  width: 24px;
+  height: 24px;
+  color: #919191;
+  stroke: currentColor;
+  fill: currentColor;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+footer .bottomMenu__item:hover, footer .bottomMenu__item:focus {
+  z-index: 999;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  margin: 0 10px;
+}
+
+footer .bottomMenu__item:hover .title, footer .bottomMenu__item:focus .title {
+  display: block;
+}
+
+footer .bottomMenu__item:hover svg, footer .bottomMenu__item:focus svg {
+  width: 34px;
+  height: 34px;
+}
+/*# sourceMappingURL=style.css.map */
