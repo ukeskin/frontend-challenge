@@ -1,0 +1,250 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #f3fcf7;
+
+  .logo {
+    width: 120px;
+  }
+
+  .navMenu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 38px;
+      .navLink {
+        text-decoration: 0;
+        color: #1d1d1f;
+        font-size: 16px;
+        font-weight: 400;
+
+        &--active {
+          color: #06c167;
+        }
+      }
+    }
+  }
+  .mobileMenuButton {
+    display: none;
+    border: 0;
+    background: none;
+    &:hover {
+      cursor: pointer;
+      background: rgba(223, 223, 223, 0.25);
+    }
+  }
+  @media (max-width: 920px) {
+    .navMenu {
+      display: none;
+      &--mobile {
+        background: #06c167;
+        display: block;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        width: 100%;
+        ul {
+          flex-direction: column;
+
+          .navLink {
+            color: white;
+          }
+        }
+      }
+    }
+    .mobileMenuButton {
+      display: block;
+      z-index: 100;
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: #f3fcf7;
+
+  padding-top: 64px;
+  .left {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      font-size: 75px;
+      font-weight: 600;
+      line-height: 90px;
+      margin-bottom: 11px;
+    }
+
+    &__para {
+      font-size: 16px;
+      color: #1d1d1fbf;
+      line-height: 22.78px;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    &__button {
+      max-width: 200px;
+      border: 0;
+      background: #06c167;
+      font-weight: 400;
+      padding: 24px 31px;
+      color: #fff;
+      svg {
+        width: 24px;
+      }
+    }
+
+    .companies {
+      margin-top: 120px;
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      img {
+        width: 150px;
+      }
+    }
+  }
+
+  .right {
+    img {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 920px) {
+    flex-direction: column;
+    text-align: center;
+    .left {
+      margin-bottom: 40px;
+      align-items: center;
+      .companies {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 53px;
+      }
+    }
+  }
+}
+
+.features {
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  gap: 60px;
+  padding: 60px 0;
+  border-bottom: 1.5px solid rgba($color: #707070, $alpha: 0.15);
+  border-top: 1.5px solid rgba($color: #707070, $alpha: 0.15);
+
+  &__item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      background: #f3fcf7;
+      width: 70px;
+      height: 70px;
+      flex-shrink: 0;
+    }
+
+    .info {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      color: #1d1d1f;
+
+      .title {
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      .subtitle {
+        font-size: 14px;
+        opacity: 0.7;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    .top {
+      span {
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .title {
+        margin: 0;
+        margin-top: 20px;
+        font-size: 60px;
+        font-weight: 500;
+      }
+    }
+
+    .bottom {
+      .benefitList {
+        display: flex;
+        flex-direction: column;
+
+        &__item {
+          display: flex;
+          font-weight: 400;
+          .icon {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 920px) {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    &__info {
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
